@@ -1,5 +1,3 @@
-# fchc-ws-app
-
 #### ********************************************************************
 
 ### 1. Na podstawie artykułu
@@ -19,12 +17,12 @@
 
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
                   xmlns:web="http://fchc.jz.pl/kraj/web-service">
-  <soapenv:Header/>
-  <soapenv:Body>
-    <web:getCountryRequest>
-      <web:name>Poland</web:name>
-    </web:getCountryRequest>
-  </soapenv:Body>
+    <soapenv:Header/>
+    <soapenv:Body>
+        <web:getCountryRequest>
+            <web:name>Poland</web:name>
+        </web:getCountryRequest>
+    </soapenv:Body>
 </soapenv:Envelope>
 ```
 
@@ -39,17 +37,17 @@ curl --header "content-type: text/xml" -d @request.xml http://localhost:9091/ws
 ```dtd
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-  <SOAP-ENV:Header/>
-  <SOAP-ENV:Body>
-    <ns2:getCountryResponse xmlns:ns2="http://fchc.jz.pl/kraj/web-service">
-      <ns2:country>
-        <ns2:name>Poland</ns2:name>
-        <ns2:population>38186860</ns2:population>
-        <ns2:capital>Warsaw</ns2:capital>
-        <ns2:currency>PLN</ns2:currency>
-      </ns2:country>
-    </ns2:getCountryResponse>
-  </SOAP-ENV:Body>
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <ns2:getCountryResponse xmlns:ns2="http://fchc.jz.pl/kraj/web-service">
+            <ns2:country>
+                <ns2:name>Poland</ns2:name>
+                <ns2:population>38186860</ns2:population>
+                <ns2:capital>Warsaw</ns2:capital>
+                <ns2:currency>PLN</ns2:currency>
+            </ns2:country>
+        </ns2:getCountryResponse>
+    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```
 
@@ -61,13 +59,13 @@ curl --header "content-type: text/xml" -d @request.xml http://localhost:9091/ws
 
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
                   xmlns:cal="http://jaczaw.pl/types/calculator">
-  <soapenv:Header/>
-  <soapenv:Body>
-    <cal:AdditionInput>
-      <cal:number1>3</cal:number1>
-      <cal:number2>3</cal:number2>
-    </cal:AdditionInput>
-  </soapenv:Body>
+    <soapenv:Header/>
+    <soapenv:Body>
+        <cal:AdditionInput>
+            <cal:number1>3</cal:number1>
+            <cal:number2>3</cal:number2>
+        </cal:AdditionInput>
+    </soapenv:Body>
 </soapenv:Envelope>
 ```
 
@@ -76,11 +74,11 @@ curl --header "content-type: text/xml" -d @request.xml http://localhost:9091/ws
 ```dtd
 
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-  <SOAP-ENV:Header/>
-  <SOAP-ENV:Body>
-    <ns2:output xmlns:ns2="http://jaczaw.pl/types/calculator">
-      <ns2:result>6</ns2:result>
-    </ns2:output>
-  </SOAP-ENV:Body>
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <ns2:output xmlns:ns2="http://jaczaw.pl/types/calculator">
+            <ns2:result>6</ns2:result>
+        </ns2:output>
+    </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
 ```

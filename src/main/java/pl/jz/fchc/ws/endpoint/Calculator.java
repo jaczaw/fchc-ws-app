@@ -18,7 +18,6 @@ import pl.jaczaw.types.calculator.SubtractionInput;
 @Endpoint
 public class Calculator {
 
-
     @ResponsePayload
     @PayloadRoot(namespace = "http://jaczaw.pl/types/calculator", localPart = "AdditionInput")
     public Output addition(@RequestPayload AdditionInput input) {

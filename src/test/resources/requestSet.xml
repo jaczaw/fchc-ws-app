@@ -1,0 +1,14 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://fchc.jz.pl/kraj/web-service">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gs:setCountryRequest>
+            <gs:country>
+                <gs:name>Rosja</gs:name>
+                <gs:capital>Moskwa</gs:capital>
+                <gs:currency>RUB</gs:currency>
+                <gs:population>123456789</gs:population>
+            </gs:country>
+        </gs:setCountryRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
