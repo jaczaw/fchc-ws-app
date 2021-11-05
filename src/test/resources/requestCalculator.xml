@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:cal="http://jaczaw.pl/types/calculator">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <cal:AdditionInput>
+            <cal:number1>3</cal:number1>
+            <cal:number2>3</cal:number2>
+        </cal:AdditionInput>
+    </soapenv:Body>
+</soapenv:Envelope>
